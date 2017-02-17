@@ -1,0 +1,7 @@
+<h1>List of blog posts:</h1>
+<% @posts.each do |post| %>
+  <p>
+    <strong><a href="posts/<%= post.id %>"><%= post.name%></a></strong> <br>
+    <%= post.content%>
+  </p>
+<% end %>
