@@ -1,0 +1,15 @@
+<h1>All Posts</h1>
+
+<% @posts.each do |post| %>
+<article style="padding: 10px; margin-bottom: 10px;">
+  <header>
+    <h4><%= post.name %></h4>
+  </header>
+  <p><%= post.content %></p>
+  <footer>
+    <a href='<%= "/posts/#{post.id}" %>'>
+      View Full Page
+    </a>
+  </footer>
+</article>
+<% end %>
