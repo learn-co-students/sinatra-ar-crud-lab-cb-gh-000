@@ -1,0 +1,6 @@
+<section id="posts">
+  <% @posts.each do |post| %>
+    <h3>name: <%= post.name %></h3>
+    <p>content: <%= post.content %></p>
+  <% end %>
+</section>
