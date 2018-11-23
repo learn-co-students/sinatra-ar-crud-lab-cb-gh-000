@@ -15,6 +15,7 @@ class ApplicationController < Sinatra::Base
   get '/posts/new' do
     erb :new
   end
+<<<<<<< HEAD
 
   post '/posts' do
     Post.create(name: params[:name], content: params[:content])
@@ -48,5 +49,10 @@ class ApplicationController < Sinatra::Base
 
   delete '/posts/:id/delete' do
     Post.find(params[:id]).destroy
+=======
+
+  post '/' do
+    erb :index
+>>>>>>> 7efc5bba32ec841e50df76d2da665183e6b2adb9
   end
 end
