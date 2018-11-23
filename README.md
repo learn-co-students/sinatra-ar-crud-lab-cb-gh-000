@@ -4,7 +4,7 @@
 2. Understand how each CRUD action corresponds to a controller action and POST
    request.
 
-## Instructio
+## Instructions
 
 We've had a lot of practice with the ActiveRecord CRUD actions, so now it's
 time to tie them to controller actions in a Sinatra application. In this lab,
